@@ -1,10 +1,14 @@
+import { Container } from 'components/Container/Container.styled';
 import React from 'react';
+import { SectionWrapper, SectionTitle } from './Section.styled';
 
 export const Section = ({ title, children }) => {
   return (
-    <section>
-      {title && <h2>{title}</h2>}
-      {children}
-    </section>
+    <SectionWrapper>
+      <Container>
+        {title && <SectionTitle>{title}</SectionTitle>}
+        {children}
+      </Container>
+    </SectionWrapper>
   );
 };
