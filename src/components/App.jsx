@@ -1,3 +1,9 @@
+import { FeedbackWidget } from './FeedbackWidget/FeedbackWidget';
+
 export const App = () => {
-  return <>React homework template</>;
+  return (
+    <>
+      <FeedbackWidget />
+    </>
+  );
 };
